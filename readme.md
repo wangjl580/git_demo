@@ -38,3 +38,7 @@
 2. 查看分支  git branch
 3. 切换分支 git checkout master
 4. 删除分支 git branch -d dev
+5. 合并分支
+   1. 首先处于 master 分支
+   2. git merge --no-ff -m 'keep merg info' dev # 合并dev到master
+   3.
