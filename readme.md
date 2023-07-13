@@ -38,4 +38,3 @@
 2. 查看分支  git branch
 3. 切换分支 git checkout master
 4. 删除分支 git branch -d dev
-5. x
