@@ -1,4 +1,4 @@
-# Git
+# Git 代码版本管理
 
 ## 用法
 
@@ -42,3 +42,17 @@
    1. 首先处于 master 分支
    2. git merge --no-ff -m 'keep merg info' dev # 合并dev到master
    3.
+
+## github  网上的资源
+
+1. 理解 git 是本地管理库, github 是 online 管理库
+
+### github 用法  
+
+1. 在 github 注册一个 github 账户 或者gitee
+2. 然后添加你的一个 online 版本库 repository:
+3. 增加远程仓库 在需要上传的目录中 执行: git remote add origin <git@github.com>:wangjl580/git_demo.git  # 增加的仓库名称为 origin 网址为 ...
+4. 添加一个额外的远程仓库 git remote add gitee <https://gitee.com/wangjl580/git_learn.git>  # > 添加多个远程仓库时, 名称不能一样
+5. 推送 git push -u origin master # 把master 推送到 名称为origin的远程仓库, 使用-u选项的主要好处是，它将设置默认的上游分支。这意味着在接下来的推送操作中，你只需执行git push命令
+6. 更改远程仓库的URL git remote set-url origin <https://gitee.com/wangjl580/git_learn.git> #  重置远程仓库origin 的URL为 https...
+7. 如果要删除名为 origin 的远程仓库，可以运行以下命令：git remote remove origin # 或者 git remote rm origin # 请注意，删除远程仓库不会影响本地仓库的内容，它只是删除了与远程仓库的关联。
